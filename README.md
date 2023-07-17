@@ -1,7 +1,7 @@
 # Tech Challenge Repository
 
 This repository contains the solution for Tech Challenge. 
-The challenge is to implement a campsite reservation system using Java, Spring Boot, JPA, REST api and Junit test.
+The challenge is to implement a campsite reservation system using Java, Spring Boot, JPA, REST api and JUnit test.
 
 ## Table of Contents
 
