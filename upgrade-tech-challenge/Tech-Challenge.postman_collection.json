@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "2b452b3e-e96c-4153-84a6-e1b64138fa0d",
+		"name": "Upgrade Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1817397"
+	},
+	"item": [
+		{
+			"name": "Get reservation availability",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/v1/campsite/availability?startDate=2023-07-14&endDate=2023-07-31",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"campsite",
+						"availability"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2023-07-14"
+						},
+						{
+							"key": "endDate",
+							"value": "2023-07-31"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new reservation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"john.doe@examplecom\",\n  \"fullName\": \"John Doe\",\n  \"startDate\": \"2023-07-17\",\n  \"endDate\": \"2023-07-19\"\n}\n"
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/campsite/reservation",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"campsite",
+						"reservation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update existing reservation",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"john.doe.updated@example.com\",\n  \"fullName\": \"John Doe updated\",\n  \"startDate\": \"2023-07-27\",\n  \"endDate\": \"2023-07-30\"\n}\n"
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/campsite/reservation/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"campsite",
+						"reservation",
+						"2"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cancel existing reservation Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/campsite/reservation/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"campsite",
+						"reservation",
+						"1"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "reservationId",
+			"value": "1"
+		}
+	]
+}
