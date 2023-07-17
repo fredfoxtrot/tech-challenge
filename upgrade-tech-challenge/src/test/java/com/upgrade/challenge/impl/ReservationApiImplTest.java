@@ -167,7 +167,7 @@ class ReservationApiImplTest {
     }
 
     @Test
-    void isAvailable_whenDatesNotAvailable_shouldReturnTrue() {
+    void isAvailable_whenDatesNotAvailable_shouldReturnFalse() {
         // reserved dates
         assertFalse(subject.isAvailable(LocalDate.now().plusDays(1), LocalDate.now().plusDays(2)));
         assertFalse(subject.isAvailable(LocalDate.now().plusDays(5), LocalDate.now().plusDays(6)));
