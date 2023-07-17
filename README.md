@@ -1,6 +1,7 @@
 # Tech Challenge Repository
 
-This repository contains the solution for the Tech Challenge. The challenge is to implement a campsite reservation system using Java and Spring Boot.
+This repository contains the solution for Tech Challenge. 
+The challenge is to implement a campsite reservation system using Java, Spring Boot and REST api.
 
 ## Table of Contents
 
@@ -13,6 +14,8 @@ This repository contains the solution for the Tech Challenge. The challenge is t
 ## Overview
 
 The Tech Challenge repository provides a campsite reservation system implemented in Java with Spring Boot. The system allows users to make reservations for a campsite, check availability, modify existing reservations, and cancel reservations. It follows the specified requirements and constraints outlined in the challenge.
+For POC purpose, this application was built using SpringBoot H2 to persist data, which is in-memory relational database engine.
+So once the server is restarted, the DB will be purged.
 
 ## Features
 
