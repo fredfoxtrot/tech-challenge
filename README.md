@@ -51,10 +51,10 @@ The campsite reservation system should now be up and running locally on http://l
 ## Usage
 Once the campsite reservation system is running, you can interact with it using the following endpoints:
 
-- GET /availability: Retrieve the availability of the campsite for a specific date range.
-- POST /reservation: Make a reservation by providing the required information.
-- PUT /reservation/{reservationId}: Modify an existing reservation by providing the reservation ID and updated details.
-- DELETE /reservation/{reservationId}: Cancel an existing reservation by providing the reservation ID.
+- GET /api/v1/campsite/availability: Retrieve the availability of the campsite for a specific date range.
+- POST /api/v1/campsite/reservation: Make a reservation by providing the required information.
+- PUT /api/v1/campsite/reservation/{reservationId}: Modify an existing reservation by providing the reservation ID and updated details.
+- DELETE /api/v1/campsite/reservation/{reservationId}: Cancel an existing reservation by providing the reservation ID.
 
 Make sure to refer to the API documentation or Swagger UI for detailed information on request payloads and response formats.
 
