@@ -62,6 +62,8 @@ Once the campsite reservation system is running, you can interact with it using 
 Make sure to refer to the API documentation or Swagger UI for detailed information on request payloads and response formats.
 
 ## Testing
+I highly encourage you to utilize the embedded Postman collection to facilitate your testing process.
+
 The campsite reservation system includes automated tests to ensure the correctness of the implemented features. 
 
 The tests cover various scenarios, including reservation creation, availability check, reservation modification, cancellation, and concurrency handling.
